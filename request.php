@@ -3,12 +3,6 @@ $dataWeather = json_decode(file_get_contents("https://api.openweathermap.org/dat
 $dataValute = json_decode(json_encode(simplexml_load_string(file_get_contents("https://www.cbr.ru/scripts/XML_daily.asp?date_req=" . date("d/m/Y")), "SimpleXMLElement", LIBXML_NOCDATA)));
 $codes = ["USD", "EUR", "SEK", "JPY", "CAD"];
 ?>
-<html>
-<head>
-<link rel="stylesheet" href="/labirint-task1/css/main.css">
-<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&subset=cyrillic" rel="stylesheet">
-</head>
-<body>
 <div class="container">
     <div class="line">
         <div class="container-header-text-12px-left">Москва</div>
@@ -37,5 +31,3 @@ $codes = ["USD", "EUR", "SEK", "JPY", "CAD"];
     <?endif;?>
 <?endforeach;?>
 </div>
-</body>
-</html>

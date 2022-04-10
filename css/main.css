@@ -66,3 +66,18 @@
     display: inline-block;
     white-space: nowrap;
 }
+.button-refresh {
+    width: 63px;
+    height: 63px;
+    margin-left: 70%;
+    background-color: #DAC1AE;
+    background-image: url("/img/load.png");
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 10px;
+    border: 0px;
+}
+.button-refresh:active {
+    background-color: #a08f82;
+}
